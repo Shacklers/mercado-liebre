@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:#EAC926;
+}
+
+li,a{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+}
+
+@media(min-width:414px){
+    header{
+       
+        display: flex;
+       
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 150px;
+        padding: 10px;
+        padding-top: 0px;
+    }
+
+
+   .header__div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:60px;
+       
+    }
+
+    .header__div--logo{
+       display: flex;
+       justify-content: center;
+       width: 100%;
+       height: 50%;
+       
+    }
+  
+
+    .header__div--logo img{
+        height:100%; /*el 100% del 50% asignado -> ocupa el 50%*/
+        width: 100%;
+        
+    }
+
+    .header__opciones{
+        display: none;
+    }
+
+    .header__div input{
+        height: 40%;
+        width: 70%;
+        border-radius: 5px;
+        border-color: whitesmoke;
+
+    }
+
+    .burger{
+        background-color: blue;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px; 
+            
+    }
+
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+    }
+
+
+
+    /* MAIN */
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:20px;
+        
+        
+        
+    }
+
+    section img{
+        
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        padding-bottom: 20px;    
+       
+    }
+
+    .main__p{
+        font-size:24px ;
+    }
+ 
+    .main__card{
+        width: 60%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: content-box;
+        margin-bottom: 10px;
+       
+
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .main__card img{
+        height: 80%;
+        width: 90%;
+    }
+
+    .card--precio{
+        font-size: 18px;
+    }
+
+    .card--descripcion,.p--descuento{
+        font-size: 16px;
+    }
+
+    .p--descuento{
+        color: greenyellow;
+    }
+
+    main section article i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+       }
+
+    .footer-layout{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .footer-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap:5px;
+        width: 70%;
+    }
+
+  .section__p-titulo,  .section__p-subtitulo{
+        text-align: center;
+    }
+
+    .section__p-titulo{
+        font-weight: bold;
+    }
+
+    .footer__copyright {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media(min-width:768px){
+    
+    header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__div{
+        flex-direction: row;
+        width: 40%;
+
+    }
+
+    [atributo="div-logo"]{
+        justify-content: flex-start;
+        width: 60%;
+        gap:30px;
+    }
+
+    .header__div input{
+        width: 80%;
+    }
+
+    .header__div--logo{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 50%;
+        
+     }
+     
+    .burger{
+        display: none;
+    }
+
+    .header__opciones{
+        display: flex;
+        width: 90%;
+        gap: 20%;
+    }
+
+    .header__opcion{
+        display: flex;
+        width: 100%;
+        gap:10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main__banner{
+        width: 100%;
+    }
+
+
+    main{
+        display: flex;
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        
+        
+        
+    }
+
+    section img{  
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        padding-bottom: 20px;    
+       
+    }
+
+    .main__p{
+        font-size:24px ;
+        width: 100%;
+        text-align: center;
+    }
+ 
+    .main__card{
+        width: 40%;
+        height: 400px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .main__card img{
+        height: 80%;
+        width: 90%;
+    }
+
+    .section__p-titulo{
+        font-weight: bold;
+        font-size:15px;
+    }
+
+    .section__p-subtitulo{
+        font-size: 12px;
+    }
+
+    .footer__copyright {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media(min-width:1279px){
+    
+    header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__div{
+        flex-direction: row;
+        width: 40%;
+
+    }
+
+    [atributo="div-logo"]{
+        justify-content: flex-start;
+        width: 60%;
+        gap:30px;
+    }
+
+    .header__div input{
+        width: 80%;
+    }
+
+    .header__div--logo{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 40%;
+        
+     }
+
+   
+
+     .header__opciones{
+        display: flex;
+        width: 90%;
+        
+       
+    }
+
+    .header__opcion{
+        display: flex;
+        width: 100%;
+    }
+
+
+    .main__p{
+        font-size:24px ;
+        text-align: start;
+        padding-left: 8%;
+    }
+
+    main section article i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+       }
+       
+ 
+   
+
+    .main__card{
+        width: 20%;
+    }
+
+   
+    .main__card:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    .footer-layout{
+        flex-direction: row;
+        flex-wrap: wrap;
+      
+      
+    }
+
+    
+    .footer-section{
+    
+        width: 30%;
+    }
+
+}

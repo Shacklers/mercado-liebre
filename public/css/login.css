@@ -1,0 +1,59 @@
+main{
+    display:flex;
+    height: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media(min-width:300px){
+    main{
+        height: 300px;
+        align-items: center;
+    }
+
+    form{
+        gap:30px;
+        height: 70%;
+        width: 70%;
+        background-color:  rgb(233, 233, 233);
+       
+      
+        align-items: center;
+        justify-content: center;
+    }
+
+    form input{
+        width: 70%;
+        border:none;
+        height: 20px;
+        border-radius: 5px;
+        
+    }
+
+    form a{
+        text-decoration: underline;
+    }
+
+    .form__ingresar{
+        background-color: blue;
+        height: 30px;
+        width: 50%;
+        color: whitesmoke;
+        
+    }
+}
+
+@media(min-width:720px){
+    main{
+        height: 400px;
+    }
+
+    form{
+        height: 90%;
+        width: 20%;
+    }
+}

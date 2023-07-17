@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main, form{
+    display: flex;
+
+   
+}
+
+label{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+@media(min-width:300px){
+    main{
+        height: 650px;
+    }
+
+    form{
+        background-color: rgb(233, 233, 234);
+        margin-top: 20px;
+        flex-direction: column;
+        height: auto;
+        gap:25px;
+        width: 80%;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       
+      
+       
+    
+        
+    }
+
+    .form__label-nacimiento{
+        margin-right: auto;
+        width:100%;
+        padding-left: 10px;
+        font-size: 20px;
+        
+       
+    }
+    .form__input-text{
+        width: 70%;
+        height: 25px;
+        border-radius: 5px;
+        border:none;
+        text-indent: 10px;
+    }
+
+    .form__perfil, .form__interes ,.sub-form__checkbox{
+        display: flex;
+    }
+
+
+
+    .form__perfil, .form__interes {
+        flex-wrap: wrap;
+        flex-direction: row;
+        height:auto;
+       
+    }
+
+    .form__perfil{
+        align-items: center;
+        height: 50px;
+    }
+    .form__perfil label{
+        width: 100%;
+       
+    }
+
+    .form__perfil .sub-form__checkbox{
+      flex-direction: row;
+      width: 50%;
+      gap:10px;
+      
+    }
+    .form__interes{
+        gap:10px;
+        padding: 5px;
+    }
+    .form__interes .sub-form__checkbox{
+       
+        width: 100%;
+       
+        gap:10px;
+        
+    }
+   
+
+    .form__submit{
+        background-color: blue;
+        color:whitesmoke;
+        width: 50%;
+        border:none;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+   
+}
+
+
+@media(min-width: 720px){
+
+    main{
+        height: 700px;
+        align-items: start;
+    }
+    form{
+        width: 40%;
+        padding-bottom: 20px;
+        padding-top: 30px;
+       
+    }
+
+    .form__label-nacimiento, .form__perfil label{
+        text-align: center;
+    }
+
+    .form__perfil .sub-form__checkbox{
+        
+        align-items: center;
+    }
+
+  
+  
+    
+}

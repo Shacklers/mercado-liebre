@@ -12,7 +12,6 @@ app.get('/', (req, res) => {
 
 app.use(express.static('public'));
 
-app.listen(3000, () => {
-    console.log('Servidor web escuchando en el puerto 3000');
-});
+const port = process.eventNames.PORT|| 3001;
+app.listen(port,()=>console.log('Servidor corriendo en el puerto ${port}'));
 

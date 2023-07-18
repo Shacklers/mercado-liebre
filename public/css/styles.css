@@ -373,6 +373,8 @@ li,a{
     }
 
     .footer-layout{
+
+        height: 300px;
         flex-direction: row;
         flex-wrap: wrap;
       
@@ -381,8 +383,9 @@ li,a{
 
     
     .footer-section{
-    
+        height: auto;
         width: 30%;
+      
     }
 
 }
